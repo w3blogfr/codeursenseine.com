@@ -28,31 +28,13 @@ const Inscription = () => (
       </Text>
     </Box>
 
-    <a
-      title="Vente de billets en ligne"
-      href="https://www.billetweb.fr/shop.php?event=codeurs-en-seine-2022"
-      rel="noreferrer"
-      className="shop_frame"
-      target="_blank"
-      data-src="https://www.billetweb.fr/shop.php?event=codeurs-en-seine-2022"
-      data-max-width="100%"
-      data-initial-height="2000"
-      data-scrolling="no"
-      data-id="codeurs-en-seine-2022"
-      data-resize="1"
-    >
-      Vente de billets en ligne
-    </a>
+  <a title="Tropevent.com" target="_tropevent" class="tropevent-embedded" 
+      href="https://www.tropevent.com/event/Codeurs-en-Seine-2023" 
+      data-src="https://www.tropevent.com/event/Codeurs-en-Seine-2023/booking-embedded">Réservation avec tropevent.com 
+  </a>
+  <Script type="text/javascript" src="https://www.tropevent.com/wro/widget.js"/>
 
-    <Script
-      type="text/javascript"
-      src="https://www.billetweb.fr/js/export.js"
-      onLoad={() => {
-        if (window.shop_frame) {
-          window.shop_frame.init();
-        }
-      }}
-    />
+
   </Layout>
 );
 

@@ -78,13 +78,13 @@ export const Nav = ({
             </NavLink>
             {pathname.startsWith(withPrefix(`/${currentYear}`)) && (
               <>
-                {/* <NavLink
+                {<NavLink
                   as={Link}
                   to={`/${currentYear}/inscription`}
                   fontWeight="bold"
                 >
                   Inscription
-                </NavLink> */}
+                </NavLink>}
                 {/* <NavLink
                   as={Link}
                   to={`/${currentYear}/programme`}

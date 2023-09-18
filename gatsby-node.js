@@ -119,10 +119,10 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 
   // Keeping the page creation so we can use it again next year
-  // createPage({
-  //   path: `/${metadataQuery.data.site.siteMetadata.currentYear}/inscription`,
-  //   component: require.resolve(`./src/templates/Inscription/index.js`),
-  // });
+  createPage({
+     path: `/${metadataQuery.data.site.siteMetadata.currentYear}/inscription`,
+     component: require.resolve(`./src/templates/Inscription/index.js`),
+  });
 
   // -------------------- CREATING SPONSORS PAGE ---------------------
   const sponsorsPageQuery = await graphql(`
